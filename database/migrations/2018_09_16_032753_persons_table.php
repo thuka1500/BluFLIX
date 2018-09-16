@@ -14,7 +14,7 @@ class PersonsTable extends Migration
     public function up()
     {
         Schema::create('persons', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->integer('tmdb_person_id')->default(0)->unique()->index();
             $table->string('name');
             $table->date('birthday')->nullable();
