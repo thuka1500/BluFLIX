@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-BluFLIX Is A Movie Streaming Application Built On The Lovely Laravel Framework
+BluFLIX Is A Media Streaming Application Built On The Lovely Laravel Framework
 </p>
 <hr>
 <p align="center">
