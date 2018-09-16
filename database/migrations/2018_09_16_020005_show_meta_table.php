@@ -15,7 +15,7 @@ class ShowMetaTable extends Migration
     {
         Schema::create('show_meta', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('tmdb_show_id')->default(0)->index();
+            $table->integer('tmdb_show_id')->default(0)->unique()->index();
             $table->string('title')->nullable();
             $table->text('overview')->nullable();
             $table->string('poster_path')->nullable();
