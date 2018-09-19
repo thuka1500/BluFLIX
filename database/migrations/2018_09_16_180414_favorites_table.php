@@ -18,9 +18,6 @@ class FavoritesTable extends Migration
             $table->bigInteger('user_id')->unsigned()->index();
             $table->bigInteger('video_id')->unsigned()->index();
             $table->timestamps();
-
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('video_id')->references('id')->on('videos')->onDelete('cascade');
         });
     }
 

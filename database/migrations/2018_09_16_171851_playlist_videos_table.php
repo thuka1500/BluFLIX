@@ -17,9 +17,6 @@ class PlaylistVideosTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('playlist_id')->unsigned()->index();
             $table->bigInteger('video_id')->unsigned()->index();
-
-            $table->foreign('playlist_id')->references('id')->on('playlists')->onDelete('cascade');
-            $table->foreign('video_id')->references('id')->on('videos')->onDelete('cascade');
         });
     }
 

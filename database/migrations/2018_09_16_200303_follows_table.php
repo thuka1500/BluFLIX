@@ -18,9 +18,6 @@ class FollowsTable extends Migration
             $table->bigInteger('user_id')->unsigned()->index();
             $table->bigInteger('following_id')->unsigned()->index();
             $table->timestamps();
-
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('following_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

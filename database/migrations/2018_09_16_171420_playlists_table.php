@@ -18,7 +18,6 @@ class PlaylistsTable extends Migration
             $table->bigInteger('user_id')->unsigned()->index();
             $table->string('name')->unique();
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

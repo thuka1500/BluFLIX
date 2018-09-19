@@ -20,9 +20,6 @@ class ReviewsTable extends Migration
             $table->longText('content');
             $table->decimal('score', 9, 2)->default(0);
             $table->timestamps();
-
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('video_id')->references('id')->on('videos')->onDelete('cascade');
         });
     }
 
